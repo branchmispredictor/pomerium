@@ -1055,7 +1055,11 @@ Authenticate Service URL is the externally accessible URL for the authenticate s
 - Type: [base64 encoded] `string`
 - Optional
 
-Signing Key is the key used to sign a user's attestation JWT which can be consumed by upstream applications to pass along identifying user information like username, id, and groups.
+Signing Key is the key used to sign a user's attestation JWT which can be consumed by upstream applications to pass along identifying user information like username, id, and groups. It is a base64 encoded string containing a PEM format private key. A key in the appropriate form can be generated with the following command:
+
+```bash
+$ openssl ecparam -name prime256v1 -genkey -noout | base64 | tr -d "\n"
+```
 
 If set, the signing key's public key will can retrieved by hitting Pomerium's `/.well-known/pomerium/jwks.json` endpoint which lives on the authenticate service. For example:
 
