@@ -18,11 +18,11 @@ require (
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/go-chi/chi v1.5.4
 	github.com/go-ole/go-ole v1.2.5 // indirect
-	github.com/go-redis/redis/v8 v8.8.3
+	github.com/go-redis/redis/v8 v8.11.0
 	github.com/golang/mock v1.5.0
 	github.com/golang/protobuf v1.5.2
 	github.com/google/btree v1.0.1
-	github.com/google/go-cmp v0.5.5
+	github.com/google/go-cmp v0.5.6
 	github.com/google/go-jsonnet v0.17.0
 	github.com/google/uuid v1.2.0
 	github.com/gorilla/handlers v1.5.1
